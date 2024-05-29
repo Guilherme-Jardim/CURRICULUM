@@ -43,6 +43,6 @@ bun dev
 
 ## Customization
 
-- Edit the pages in the pages directory to create your curriculum content.
+- Edit the page in the app directory to create your curriculum content.
 - Customize the styling using a Tailwind CSS.
 - Add your personal information, work experience, education, and other relevant details.
