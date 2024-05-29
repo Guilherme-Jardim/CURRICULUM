@@ -1,5 +1,3 @@
-This is a  project .
-
 # CURRICULUM
 
 This is a basic [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) for creating a curriculum website. It provides a pre-configured setup with essential tools and libraries to streamline the initialization phase. By following the steps below, you can get started with your own curriculum website.
@@ -25,6 +23,8 @@ npm install
 yarn install
 # or
 pnpm install
+# or
+bun install
 ```
 
 4 - **Run the development server**
