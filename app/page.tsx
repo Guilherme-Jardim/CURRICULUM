@@ -1,5 +1,6 @@
-import { Phone, Email, GitHub, LinkedIn, WhatsApp } from "@mui/icons-material";
+import { Phone, Email, GitHub, LinkedIn, WhatsApp, Rocket } from "@mui/icons-material";
 import { Box, Typography, Tooltip, LinearProgress, Divider } from "@mui/material";
+import Image from "next/image";
 import Link from "next/link";
 
 
@@ -8,16 +9,26 @@ export default function Curriculum() {
     <Box className="pr-5 m-1">
       <Box className="flex flex-row border border-gray-400 rounded-lg gap-6 p-4">
         <Box className="w-2/5">
-          <img 
-            src="https://media.licdn.com/dms/image/C4D03AQGhWw72_nxcSQ/profile-displayphoto-shrink_200_200/0/1668042495028?e=1721865600&v=beta&t=Bzw_DBQ559Rtr8nvvD6qLQCB5HC08KKuxqzUtV6dgHM" 
-            alt="Guilherme Jardim"
-            className="rounded-full w-64 mb-5"
-          />
+          <Box className="flex justify-center mb-8 mt-8">
+            <Image 
+              src="https://media.licdn.com/dms/image/C4D03AQGhWw72_nxcSQ/profile-displayphoto-shrink_200_200/0/1668042495028?e=1721865600&v=beta&t=Bzw_DBQ559Rtr8nvvD6qLQCB5HC08KKuxqzUtV6dgHM" 
+              alt="Guilherme Jardim"
+              className="rounded-full w-64 mb-5"
+              quality={100}
+              height={1920}
+              width={1080}
+            />
+          </Box>
           <Typography variant="h6" className="border-b border-black mb-4">DESCUBRA MINHAS HABILIDADES</Typography>
           <Link href="https://github.com/Guilherme-Jardim" target="_blank" className="flex items-center mb-4 hover:underline">
             <GitHub className="mr-2" />
             <Typography className="font-bold">GITHUB</Typography>
             /Guilherme-Jardim
+          </Link>
+          <Link href="https://app.rocketseat.com.br/me/guilherme-jardim-03544" target="_blank" className="flex items-center mb-4 hover:underline">
+            <Rocket className="mr-2" />
+            <Typography className="font-bold">ROCKETSEAT</Typography>
+              /guilherme-jardim-03544
           </Link>
           <Link href="https://www.linkedin.com/in/guilherme-jardim-9b85151b5/" target="_blank" className="flex items-center mb-4 hover:underline">
             <LinkedIn className="mr-2" />
@@ -34,10 +45,10 @@ export default function Curriculum() {
           </Typography>
           <Box className="flex flex-col items-stretch" >
             <Typography variant="h6" className="border-b border-black mb-4">IDIOMAS</Typography>
-            <Tooltip title="85%">
+            <Tooltip title="75%">
               <Typography className="mb-2">Espanhol</Typography>
             </Tooltip>
-            <LinearProgress variant="determinate" value={85} className="h-2 rounded-lg mb-4"/>
+            <LinearProgress variant="determinate" value={75} className="h-2 rounded-lg mb-4"/>
             <Tooltip title="60%">
               <Typography className="mb-2">Inglês</Typography>
             </Tooltip>
@@ -99,6 +110,13 @@ export default function Curriculum() {
               <Typography variant="h6" className="border-b border-black mb-4">CURSOS E CERTIFICAÇÕES</Typography>
             </Link>
             <Box className="mb-8">
+              <Link href="https://app.rocketseat.com.br/me/guilherme-jardim-03544" target="_blank" className="hover:underline">
+                <Typography variant="h6" fontWeight="bold">Formação Node e React - Rocketseat</Typography>
+                <Typography>em andamento</Typography>
+              </Link>
+              <Divider />
+            </Box>
+            <Box className="mb-8">
               <Link href="https://www.origamid.com/certificate/733b17d8" target="_blank" className="hover:underline">
                 <Typography variant="h6" fontWeight="bold">TypeScript para Iniciantes - Origamid</Typography>
                 <Typography>concluído em 2023</Typography>
@@ -106,15 +124,22 @@ export default function Curriculum() {
               <Divider />
             </Box>
             <Box className="mb-8">
-              <Link href="https://www.origamid.com/certificate/733b17d8" target="_blank" className="hover:underline">
+              <Link href="https://www.origamid.com/certificate/ba0d3359" target="_blank" className="hover:underline">
+                <Typography variant="h6" fontWeight="bold">React Completo - Origamid</Typography>
+                <Typography>concluído em 2023</Typography>
+              </Link>
+              <Divider />
+            </Box>
+            <Box className="mb-8">
+              <Link href="https://www.origamid.com/certificate/f47637d3" target="_blank" className="hover:underline">
                 <Typography variant="h6" fontWeight="bold">JavaScript Completo ES6 - Origamid</Typography>
                 <Typography>concluído em 2023</Typography>
               </Link>
               <Divider />
             </Box>
             <Box className="mb-8">
-              <Link href="https://www.origamid.com/certificate/ba0d3359" target="_blank" className="hover:underline">
-                <Typography variant="h6" fontWeight="bold">React Completo - Origamid</Typography>
+              <Link href="https://www.origamid.com/certificate/3a5b0a16" target="_blank" className="hover:underline">
+                <Typography variant="h6" fontWeight="bold">UI Design para Iniciantes - Origamid</Typography>
                 <Typography>concluído em 2023</Typography>
               </Link>
               <Divider />
